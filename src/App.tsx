@@ -2,9 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Button } from './components/Button';
+import { Choices } from './components/Choices';
+import { Timer } from './components/Timer';
 
 function click() {
-  console.log('olá');
+  console.log('choices');
 }
 
 function App() {
@@ -23,12 +25,7 @@ function App() {
         >
           Learn React
         </a>
-        <Button
-          textColor='red'
-          backgroundColor='black'
-          text='test'
-          onClick={() => click()}
-        />
+        <Timer />
       </header>
     </div>
   );
